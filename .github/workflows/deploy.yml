@@ -30,6 +30,7 @@ jobs:
       - run: npm run build
         env:
           VITE_FORMSPREE_FORM_ID: ${{ secrets.VITE_FORMSPREE_FORM_ID }}
+          DEPLOY_TARGET: github-pages
 
       - uses: actions/upload-pages-artifact@v3
         with:
